@@ -6,7 +6,7 @@ import java.util.Comparator;
 
 public class FindPlayer implements IPlayersFinder {
 
-public Point[] result;
+
  
 
 
