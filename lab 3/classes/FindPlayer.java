@@ -6,7 +6,7 @@ import java.util.Comparator;
 
 public class FindPlayer implements IPlayersFinder {
 
-public Point[] result;
+
  
 
 
@@ -86,6 +86,9 @@ public java.awt.Point[] findPlayers(String[] photo, int team, int threshold){
 	arr_test=setarray( photo , team);
 	for (int i=0;i<photo.length;i++) {
 			for (int j=0;j<photo[0].length();j++) {
+				/*arr_inf[0] for num of boxes ,arr_inf[1] for xmax ,arr_inf[2] for xmin
+			        arr_inf[3] for ymax, arr_inf[4] for ymin
+				*/  
 			arr_inf[0]=0 ;arr_inf[1]=j;arr_inf[2]=j;arr_inf[3]=i;arr_inf[4]=i;
 			if (arr_test[i][j]) {
 				check(i,j,arr_test,arr_inf);
